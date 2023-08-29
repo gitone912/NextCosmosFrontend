@@ -6,78 +6,128 @@ import StickyMenu from "../../../../NextCosmosFrontend/nextcosmos2/src/lib/Stick
 import Navigation from "../helpers/Navigation";
 import MobileHeaderCom from "../../../nextcosmos2/src/MobileHeaderCom";
 
-
-function HeaderHomeTwo() {
-  useEffect(() => {
-    StickyMenu(".main-header");
-  }, []);
-  return (
-    <>
-      <MobileHeaderCom logo={logo2} />
-      <header className="main-header header-two text-white bg-dark-blue">
-        <div className="logo-outer bg-dark-blue py-0 px-100 d-none d-lg-flex align-items-center">
-          <div className="logo">
-            <a href="/">
-              <img src={logo} alt="Logo" title="Logo" />
-            </a>
+<footer
+    className={`main-footer footer-two bgs-cover text-white ${
+      className || ""
+    }`}
+    style={{ backgroundImage: `url(${Background})` }}
+  >
+    
+    <div className="container">
+      <div className="footer-top pt-75">
+      <ul className="contact-info">
+            <li>
+              <i className="fas fa-phone-alt"></i>
+              <div className="content">
+                <span>Call Us</span>
+                <h5><a href="callto:+91 8851373820">+91 8851 373 820</a></h5>
+              </div>
+            </li>
+            <li>
+              <i className="fas fa-envelope"></i>
+              <div className="content">
+                <span>Write to Us</span>
+                <h5><a href="mailto:info@nextcosmostechnology.com">info@nextcosmostechnology.com</a></h5>
+              </div>
+            </li>
+            <li>
+              <i className="fas fa-clock"></i>
+              <div className="content">
+                <span>Office hours</span>
+                <h5>Mon-Sat 9:00 am - 6:00 pm</h5>
+              </div>
+            </li>
+          </ul>
+      </div>
+      <div className="footer-widget-area pt-85 pb-20">
+        <div className="row">
+          <div className="col-lg-3 col-sm-6">
+          <div className="footer-widget about-widget">
+                <div className="footer-logo mb-35">
+                  <a href="/">
+                  <img src={logo} alt="Logo" title="Logo" />
+                  </a>
+                </div>
+                <div className="text">Wide range of programming languages, frameworks, and technologies to build efficient and scalable software systems.</div>
+                <ul className="contact-info mt-20">
+                  <li>
+                    <i className="fas fa-map-marker-alt"></i>
+                    <span>B-7, 1st Floor Sector-2<br />Noida, Uttar Pradesh 201301</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div className="header-wrap align-self-center">
-          <div className="header-top py-10">
-            <div className="top-left">
-              <ul>
-                <li>
-                  Call Us: <a href="callto:+91 8851373820">+91 8851373820</a>
-                </li>
-                <li>
-                  Email us:{" "}
-                  <a href="mailto:info@nextcosmostechnology.com">info@nextcosmostechnology.com</a>
-                </li>
+          <div className="col-lg-2 col-6">
+            <div className="footer-widget link-widget ml-20 rml-0">
+              <h4 className="footer-title">Services</h4>
+              <ul className="list-style-two">
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Training Program</a></li>
+                <li><a href="#">Online Courses</a></li>
+                <li><a href="#">Digital Marketing</a></li>
+                <li><a href="#">Graphic Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">SEO/SMO/PPC</a></li>
               </ul>
             </div>
-            <div className="top-right">
-              <div className="office-time">
-                <i className="far fa-clock"></i>
-                <span>09:00 am - 06:00 pm</span>
-              </div>
-              <div className="social-style-one">
-                <a href="http://facebook.com">
-                  <i className="fab fa-facebook-f"></i>
-                </a>
-                <a href="http://twitter.com">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com/">
-                  <i className="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.pinterest.com/">
-                  <i className="fab fa-pinterest-p"></i>
-                </a>
-              </div>
-            </div>
           </div>
-          <div className="header-upper">
-            <div className="container-fluid clearfix">
-              <div className="header-inner d-flex align-items-center">
-                <div className="nav-outer clearfix d-flex align-items-center">
-                  <Navigation className="restly-restly-header-two" />
-                  <div className="menu-btn">
-                    {/* <a href="/contact" className="theme-btn">
-                      meet with us
-                    </a> */}
-                    <Link to="/contact" className="theme-btn">
-                      meet with us
-                    </Link>
-                  </div>
-                </div>
-              </div>
+          <div className="col-lg-2 col-6">
+  <div className="footer-widget link-widget ml-20 rml-0">
+    <h4 className="footer-title">Explore</h4>
+    <ul className="list-style-two">
+      <li><a href="#">Technologies</a></li>
+      <li><a href="#">Our Services</a></li>
+      <li><a href="#">Testimonials</a></li>
+      <li><a href="#">SaaS Solutions</a></li>
+      <li><a href="#">Case Studies</a></li>
+      <li><a href="#">Latest News</a></li>
+      <li><a href="#">Get in Touch</a></li>
+    </ul>
+  </div>
+</div>
+          <div className="col-lg-3 col-6">
+  <div className="footer-widget link-widget ml-20 rml-0">
+    <h4 className="footer-title">Online Courses</h4>
+    <ul className="list-style-two">
+      <li><a href="#">React/Node JS</a></li>
+      <li><a href="#">MERN Stack</a></li>
+      <li><a href="#">Full-Stack Development</a></li>
+      <li><a href="#">Type Script</a></li>
+      <li><a href="#">HTML5/CSS3</a></li>
+      <li><a href="#">ES6/Javascript</a></li>
+      <li><a href="#">Mangoes &amp; Sequelize</a></li>
+    </ul>
+  </div>
+</div>
+          <div className="col-lg-2 col-6">
+  <div className="footer-widget link-widget ml-20 rml-0">
+    <h4 className="footer-title">Technologies</h4>
+    <ul className="list-style-two">
+      <li><a href="#">DevOps</a></li>
+      <li><a href="#">Agile methodology</a></li>
+      <li><a href="#">Postman</a></li>
+      <li><a href="#">Swagger</a></li>
+      <li><a href="#">Version Control Tool</a></li>
+      <li><a href="#">SSL/TLS</a></li>
+      <li><a href="#">Cloud Computing</a></li>
+    </ul>
+  </div>
+</div>
+        </div>
+      </div>
+      <div className="copyright-area">
+        <div className="container">
+          <div className="copyright-inner pt-15">
+            <div className="social-style-one mb-10">
+              <a href="http://facebook.com"><i className="fab fa-facebook-f"></i></a>
+              <a href="http://twitter.com"><i className="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/"><i className="fab fa-instagram"></i></a>
+              <a href="https://www.pinterest.com/"><i className="fab fa-pinterest-p"></i></a>
             </div>
+            <p>Copyright © 2022 Next Cosmos Technology Pvt. Ltd.</p>
           </div>
         </div>
-      </header>
-    </>
-  );
-}
-
-export default HeaderHomeTwo;
+      </div>
+    
+  </footer>
